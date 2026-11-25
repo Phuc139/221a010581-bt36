@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-bar {
+    width: 100%;
+    background: #1f1f1f;
+    color: #ff9800;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 2px solid #ff9800;
+    margin-bottom: 16px;
+}
+
+.header-bar a {
+    color: #fff;
+    background: #333;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.hud {
+    width: 500px;
+    max-width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+#start-btn {
+    padding: 8px 16px;
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#game-container {
+    width: 500px;
+    height: 400px;
+    border: 3px solid #ff9800;
+    border-radius: 14px;
+    background-color: #f5f7fa;
+    position: relative;
+    overflow: hidden;
+}
+
+#apple {
+    width: 28px;
+    height: 28px;
+    background-color: #e53935;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 236px;
+}
+
+#basket {
+    width: 90px;
+    height: 24px;
+    background-color: #795548;
+    border: 2px solid #4e342e;
+    border-radius: 4px 4px 10px 10px;
+    position: absolute;
+    bottom: 10px;
+    left: 205px;
+}
+
+#game-over {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ff5252;
+    font-size: 2.2rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-controls {
+    margin-top: 12px;
+    display: flex;
+    gap: 16px;
+}
+
+.mobile-controls button {
+    padding: 10px 24px;
+    background: #2c2c2c;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 6px;
+    font-weight: bold;
+}
